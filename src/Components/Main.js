@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Search from './Search';
+import Display from './Display';
 
 class Main extends Component {
   constructor(props){
@@ -8,4 +10,15 @@ class Main extends Component {
       days : [],
     }
   }
+
+  render(){
+    return(
+      <div>
+        <Search/>
+        <Display/>
+      </div>
+    );
+  }
 }
+
+export default Main
