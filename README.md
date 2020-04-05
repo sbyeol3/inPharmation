@@ -1,10 +1,20 @@
 # 약국정보조회 웹서비스 : inPharmation
 
+## Front-End
 ### install packages
 ~~~
 npm install --save react-router-dom
 npm install --save react-redux
 npm install --save axios
+~~~
+
+## Back-End
+- CORS
+### install packages
+~~~
+npm install --save express
+npm install --save request
+npm install --save xml-js
 ~~~
 
 ### 사용한 API
