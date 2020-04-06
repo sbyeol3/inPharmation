@@ -1,6 +1,8 @@
-# 약국정보조회 웹서비스 : inPharmation
+# 재난문자 조회하는 웹 서비스
 
 ## Front-End
+- React.js
+
 ### install packages
 ~~~
 npm install --save react-router-dom
@@ -9,18 +11,20 @@ npm install --save axios
 ~~~
 
 ## Back-End
-- CORS
+- Node.js
+- express
+
 ### install packages
 ~~~
 npm install --save express
 npm install --save request
-npm install --save xml-js
+npm install --save cors
 ~~~
 
 ### 사용한 API
-공공데이터포털 : 전국 약국정보 조회 서비스<br/>
+공공 데이터 포털 : 재난문자방송 발령현황 서비스<br/>
 ~~~
-https://www.data.go.kr/dataset/15000576/openapi.do
+https://www.data.go.kr/dataset/3058822/openapi.do
 ~~~
 
 ### License
