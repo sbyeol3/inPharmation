@@ -1,14 +1,13 @@
 import React from "react";
 
 const axios = require('axios');
-const callApi = async (props) => {
-    const {gu, days} = props;
-    
+const callApi = async (gu,days) => {
+    console.log(gu,days)
     try {
         axios({
-            url: "localhost:8080",   
+            url: "http://localhost:5000/search",   
             method: 'get',
-            data: {
+            params: {
                 Q0: '서울특별시', // 시,도
                 Q1: gu, // 군, 구
                 QT: days, // 진료 요일
