@@ -2,9 +2,8 @@ import React from "react";
 
 const axios = require('axios');
 const callApi = async (gu,days) => {
-    console.log(gu,days)
     try {
-        axios({
+        const {data} = await axios({
             url: "http://localhost:5000/search",   
             method: 'get',
             params: {
@@ -13,6 +12,7 @@ const callApi = async (gu,days) => {
                 QT: days, // 진료 요일
             }
         })
+        return data
     } catch (e) {
         console.log(e);
     }

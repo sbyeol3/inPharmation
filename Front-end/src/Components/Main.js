@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Search from './Search';
 import Display from './Display';
 
-class Main extends Component {
-  constructor(props){
-    super(props);
-    this.state= {
-      addr : "",
-      days : [],
-    }
-  }
+const Main = () => {
+  const [msgData, setMsgData] = useState([]);
 
-  render(){
-    return(
-      <div>
-        <Search/>
-        <Display/>
-      </div>
-    );
+  const dataSubmit = (data) => {
+    setMsgData(data.data)
   }
+  
+  return(
+    <>
+      <Search onSubmit={dataSubmit}/>
+      {console.log(msgData)}
+      <Display data={msgData}/>
+    </>
+  );
 }
 
 export default Main
