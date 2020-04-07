@@ -4,6 +4,7 @@
 Back-end/ServerApi/node_modules
 Back-end/package-lock.json
 Front-end/node_modules
+/node_modules
 /.pnp
 .pnp.js
 
