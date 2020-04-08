@@ -39,10 +39,6 @@ const Search = (props) => {
 
   return(
     <div className="Search">
-      <p>영업요일</p>
-      <label className="DaysCheckBox" onChange={handleInputChange}>
-        <CheckDays/>
-      </label>
       <p>약국주소</p>
       <label className="AddrSelected">
         서울특별시

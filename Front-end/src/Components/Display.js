@@ -1,17 +1,18 @@
 import React, {useState, useEffect} from 'react';
 import './Main.css';
 import './Display.css';
-// import {Card} from 'bootstrap';
+import {Card} from 'react-bootstrap';
 
 const CardField = (props) => {
-    const {create_data, location_id, location_name, md101_sn, msg, send_platform} = props;
+    const {create_date, location_id, location_name, md101_sn, msg, send_platform} = props.data;
     return(
-        <div style={{ width: '18rem', height: '100px'}}>
-            <div>
-                <p>{location_name}</p>
-                <p>{msg}</p>
-            </div>
-        </div>
+        <Card style={{ width: '20rem', fontSize:'11px'}}>
+            <Card.Header>{create_date}</Card.Header>
+            <Card.Body>
+                <Card.Title>재난문자</Card.Title>
+                <Card.Text>{msg}</Card.Text>
+            </Card.Body>
+        </Card>
     );
 }
 const Display = (props) => {
@@ -22,7 +23,6 @@ const Display = (props) => {
     },[props])
     return(
             <div className="Display">
-            <p>hi</p>
             { data && data.map((v,i) => <CardField data={v}/>)}
             </div>
     )
