@@ -18,7 +18,7 @@ router.get('/search/', (req,res) => {
     method:"GET",
     qs:{
       type: 'json',
-      numOfRows: '10',
+      numOfRows: '20',
       pageNo: '1',
       flag: 'Y',
     }

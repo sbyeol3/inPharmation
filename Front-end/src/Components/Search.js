@@ -39,13 +39,6 @@ const Search = (props) => {
 
   return(
     <div className="Search">
-      <p>약국주소</p>
-      <label className="AddrSelected">
-        서울특별시
-        <select className="selectLang" value={gu} onChange={selectGuChange}>
-          <OptionGu/>
-        </select>
-      </label>
       <button onClick={handleClick}>Search</button>
     </div>
   );

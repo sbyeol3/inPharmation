@@ -1,13 +1,13 @@
 .Search {
   float : left;
   margin: 0;
-  width : 37%;
+  width : 10%;
   height: 550px;
   /* background-color: antiquewhite; */
 }
 
 .Display {
-  width: 63%;
+  width: 90%;
   text-align: left;
   margin: 0;
   float : right;
