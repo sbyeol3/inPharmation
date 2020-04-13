@@ -3,6 +3,6 @@
   height: 200px;
   font-size: 40px;
   font-weight: 900;
-  background-color: #F29886;
   margin: 0;
+  background: linear-gradient(-90deg, #84CF6A, #16C0B0);
 }
