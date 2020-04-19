@@ -6,3 +6,29 @@
   margin: 0;
   background: linear-gradient(-90deg, #84CF6A, #16C0B0);
 }
+
+.Button {
+  float: left;
+  margin-left: 4%;
+  margin-top: 3%;
+}
+
+.Button > button {
+  font-weight: 700;
+  width: 130px;
+  height: 45px;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+}
+
+.Button > button:hover {
+  font-weight: 900;
+  background-color: rgb(247, 206, 27);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-2px);
+  /* color: #fff; */
+}

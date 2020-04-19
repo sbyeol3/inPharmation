@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Search from './Search';
+import ShowMsg from './ShowMsg';
 import Display from './Display';
 
 const Main = () => {
@@ -11,7 +11,7 @@ const Main = () => {
   
   return(
     <>
-      <Search onSubmit={dataSubmit}/>
+      <ShowMsg onSubmit={dataSubmit}/>
       {console.log(msgData)}
       <Display data={msgData}/>
     </>
